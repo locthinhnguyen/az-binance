@@ -10,7 +10,7 @@ const Homepage = () => {
           className="w-[92%] rounded-[20px]"
         />
         <div className="absolute flex items-center flex-col">
-          <div className="flex flex-col gap-5 p-5 items-center w-[736px] pt-[220px]">
+          <div className="flex flex-col gap-5 p-5 items-center w-[736px] pt-[250px]">
             <h1 className="text-[64px] font-medium text-[#FFF] text-center">
               Chào mừng bạn đến với AZ finance
             </h1>
@@ -23,8 +23,8 @@ const Homepage = () => {
               <img src="./icons/wrapper.svg" alt="." />
             </button>
           </div>
-          <div className="pt-[119px] w-[100%] px-8 flex justify-center">
-            <form className=" w-[1180px] h-[129px] bg-[black] flex flex-col items-center rounded-[10px] mt-[59px]">
+          <div className="pt-[145px] w-[100%] px-8 flex justify-center">
+            <form className=" w-[1180px] h-[129px] bg-[black] flex flex-col items-center rounded-[10px] mt-[100px]">
               <h4 className="medium px-5 py-3 w-full text-center">
                 Nhận tư vấn miễn phí ngay
               </h4>

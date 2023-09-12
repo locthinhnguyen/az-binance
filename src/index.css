@@ -30,6 +30,12 @@
   color: var(--character-primary-inverse, #FFF);
 }
 
+.label-larg {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--character-primary-inverse, #FFF);
+}
+
 .medium-h4 {
   font-size: 20px;
   font-weight: 500;
@@ -60,4 +66,31 @@
   font-size: 16px;
   font-weight: 400; 
   color: var(--character-secondary-45, rgba(0, 0, 0, 0.45));
+}
+
+.regular {
+  font-size: 16px;
+  font-weight: 400; 
+  color: var(--character-primary-85, rgba(0, 0, 0, 0.85));
+}
+
+.description {
+  font-size: 12px;
+  font-weight: 400px;
+  color: var(--character-success, #52C41A);
+}
+
+.overlay {
+  background: linear-gradient(180deg, rgba(58, 58, 58, 0.00) 0%, #1D1D1D 100%);
+}
+
+.bg {
+  background: var(--character-secondary-45, rgba(0, 0, 0, 0.45));
+}
+
+.h6 {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--neutral-600, #4E545F);
 }
