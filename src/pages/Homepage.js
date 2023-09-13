@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Homepage = () => {
   return (
@@ -10,7 +10,7 @@ const Homepage = () => {
           className="w-[92%] rounded-[20px]"
         />
         <div className="absolute flex items-center flex-col">
-          <div className="flex flex-col gap-5 p-5 items-center w-[736px] pt-[250px]">
+          <div className="flex flex-col gap-5 p-5 items-center w-[736px] pt-[150px]">
             <h1 className="text-[64px] font-medium text-[#FFF] text-center">
               Chào mừng bạn đến với AZ finance
             </h1>

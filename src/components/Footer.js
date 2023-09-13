@@ -1,125 +1,125 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
   const footerList = [
     {
-      title: 'Company',
+      title: "Company",
       links: [
         {
-          name: 'About us',
-          link: '',
+          name: "About us",
+          link: "",
         },
         {
-          name: 'Careers',
-          link: '',
+          name: "Careers",
+          link: "",
         },
         {
-          name: 'Portfolio',
-          link: '',
+          name: "Portfolio",
+          link: "",
         },
       ],
     },
 
     {
-      title: 'Blockhain Development',
+      title: "Blockhain Development",
       links: [
         {
-          name: 'DApp Development',
-          link: '',
+          name: "DApp Development",
+          link: "",
         },
         {
-          name: 'NFT development',
-          link: '',
+          name: "NFT development",
+          link: "",
         },
         {
-          name: 'Smart contracts',
-          link: '',
+          name: "Smart contracts",
+          link: "",
         },
         {
-          name: 'Private Blockchain Solution',
-          link: '',
+          name: "Private Blockchain Solution",
+          link: "",
         },
         {
-          name: 'Decentralize Wallet integration',
-          link: '',
+          name: "Decentralize Wallet integration",
+          link: "",
         },
       ],
     },
     {
-      title: 'Software Development',
+      title: "Software Development",
       links: [
         {
-          name: 'Android/iOS  Application Development',
-          link: '',
+          name: "Android/iOS  Application Development",
+          link: "",
         },
         {
-          name: 'Software Development Outsourcing',
-          link: '',
+          name: "Software Development Outsourcing",
+          link: "",
         },
         {
-          name: 'UI/UX Design',
-          link: '',
+          name: "UI/UX Design",
+          link: "",
         },
       ],
     },
     {
-      title: '2D/3D Creative Design',
+      title: "2D/3D Creative Design",
       links: [
         {
-          name: 'Animation',
-          link: '',
+          name: "Animation",
+          link: "",
         },
         {
-          name: 'Modeling',
-          link: '',
+          name: "Modeling",
+          link: "",
         },
         {
-          name: '2D/3D Creative Design',
-          link: '',
+          name: "2D/3D Creative Design",
+          link: "",
         },
         {
-          name: 'NFT Art',
-          link: '',
+          name: "NFT Art",
+          link: "",
         },
       ],
     },
   ];
-  const service = [
-    {
-      title: 'Company',
-      content: [
-        {
-          title: 'About us',
-          link: '',
-        },
-        {
-          title: 'Careers',
-          link: '',
-        },
-        {
-          title: 'Portfolio',
-          link: '',
-        },
-      ],
-    },
-    {
-      title: 'Sevice',
-      content: [
-        {
-          title: 'Blockchain Application',
-          link: '',
-        },
-        {
-          title: 'Software Development',
-          link: '',
-        },
-        {
-          title: '2D/3D Creative Design',
-          link: '',
-        },
-      ],
-    },
-  ];
+  // const service = [
+  //   {
+  //     title: 'Company',
+  //     content: [
+  //       {
+  //         title: 'About us',
+  //         link: '',
+  //       },
+  //       {
+  //         title: 'Careers',
+  //         link: '',
+  //       },
+  //       {
+  //         title: 'Portfolio',
+  //         link: '',
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     title: 'Sevice',
+  //     content: [
+  //       {
+  //         title: 'Blockchain Application',
+  //         link: '',
+  //       },
+  //       {
+  //         title: 'Software Development',
+  //         link: '',
+  //       },
+  //       {
+  //         title: '2D/3D Creative Design',
+  //         link: '',
+  //       },
+  //     ],
+  //   },
+  // ];
   return (
     <div className=" flex justify-center  bg-[white]">
       <div className="container py-8 px-8 flex justify-center">
