@@ -84,6 +84,7 @@
   background: linear-gradient(180deg, rgba(58, 58, 58, 0.00) 0%, #1D1D1D 100%);
 }
 
+
 .bg {
   background: var(--character-secondary-45, rgba(0, 0, 0, 0.45));
 }
@@ -94,3 +95,10 @@
   text-align: center;
   color: var(--neutral-600, #4E545F);
 }
+
+.slide {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.2));
+}
+
+
+

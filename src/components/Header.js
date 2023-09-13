@@ -10,14 +10,14 @@ const Header = () => {
       id: 2,
       text: 'Khóa học online',
     },
-    {
-      id: 3,
-      text: 'Khóa học video',
-    },
-    {
-      id: 4,
-      text: 'Chính sách',
-    },
+    // {
+    //   id: 3,
+    //   text: 'Khóa học video',
+    // },
+    // {
+    //   id: 4,
+    //   text: 'Chính sách',
+    // },
     {
       id: 5,
       text: 'Liên hệ',
@@ -35,7 +35,10 @@ const Header = () => {
             {listMenu?.map((item) => {
               return (
                 <li key={item.id} className="p-4 items-center">
-                  <a className="textMenu" href="#123">
+                  <a
+                    className="textMenu hover:text-[#FA8C16] duration-500"
+                    href="#123"
+                  >
                     {item.text}
                   </a>
                 </li>
@@ -43,11 +46,11 @@ const Header = () => {
             })}
           </ul>
         </div>
-        <div className="flex items-center p-[10px]">
+        {/* <div className="flex items-center p-[10px]">
           <button className="px-4 bg-[#FAFAFA] rounded text-[12px] font-medium">
             Kết nối ví
           </button>
-        </div>
+        </div> */}
       </div>
     </header>
   );

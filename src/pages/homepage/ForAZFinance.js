@@ -4,7 +4,7 @@ const ForAZFinance = () => {
   return (
     <div className="flex justify-center">
       <div className="container pt-[134px] w-[1537px] flex justify-center pb-[32px]">
-        <div className="w-[92%] px-8 flex gap-8 items-start">
+        <div className="w-[100%] px-8 flex gap-8 items-start">
           <div className="flex items-center gap-2 w-[500px]">
             <h1 className="medium-h1">Về</h1>
             <div className="flex items-center gap-2 p-[10px]">

@@ -30,7 +30,7 @@ const Course = () => {
   return (
     <div className="flex justify-center">
       <div className="container flex justify-center">
-        <div className="px-8 w-[92%] flex flex-col justify-center gap-8">
+        <div className="px-8 w-[100%] flex flex-col items-center justify-center gap-8">
           <div className="flex flex-col gap-2 items-center">
             <div className="flex items-center gap-2 justify-center">
               <img src="./icons/group.svg" alt="." />

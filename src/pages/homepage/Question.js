@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Question = () => {
   const listQuestion = [
     {
+      id: 1,
       title: 'Về khóa học',
       list: [
         {
@@ -10,7 +11,7 @@ const Question = () => {
           text: 'AZ101 là một Series khóa học trực tuyến với các 3 giáo cấp độ chính cơ bản, nâng cao, và chuyên nghiệp, về các chủ đề bao gồm kiến thức nền tảng, kỹ năng giao dịch, kỹ năng phân tích và research. Đến với AZ 101, bạn sẽ tìm thấy nguồn cảm hứng từ các lớp học thực hành trực tuyến và các giảng viên đứng đầu trong lĩnh vực, để bạn có thể rút ngắn con đường đi đến thành coong trong đầu tư trên thị trường Crypto',
         },
         {
-          content: 'Lớp học kéo dài bao lâu, tôi có quyền lợi gif khác không',
+          content: 'Lớp học kéo dài bao lâu, tôi có quyền lợi gì khác không',
           text: 'Lớp học của tất cả các môn sẽ kéo dài 8 buổi trong 2 tuần, đông thời bạn sẽ nhận được đặt quên là nhận hỗ trợ tư vấn và giải đáp trong vòng 2 năm',
         },
         {
@@ -20,11 +21,12 @@ const Question = () => {
       ],
     },
     {
-      title: 'Về Crypto',
+      id: 2,
+      title: 'Về crcrypto',
       list: [
         {
           content: 'Dữ liệu On chain là gì?',
-          text: 'Dữ liệu on-chain là các dữ liệu của Blockchain. Có thể hiểu đơn giản Blockchain là tổng hợp những chuỗi khối chứa dữ liệu và gắn kết với nhau. Các dữ liệu này có thể là: Dữ liệu về Block (Phí gas, miner, time,...); Dữ liệu về Giao dịch (contract ví, số lượng token giao dịch,...); Hành động tương tác với Smart contract (tham gia bỏ phiếu quản trị, thêm thanh khoản,...). ',
+          text: 'Dữ liệu on-chain là các dữ liệu của Blockchain. Có thể hiểu đơn giản Blockchain là tổng hợp những chuỗi khối chứa dữ liệu và gắn kết với nhau. Các dữ liệu này có thể là: Dữ liệu về Block (Phí gas, miner, time,...); Dữ liệu về Giao dịch (contract ví, số lượng token giao dịch,...); Hành động tương tác với Smart contract (tham gia bỏ phiếu quản trị, thêm thanh khoản,...).',
         },
         {
           content: 'Vì sao tôi phải học dữ liệu on chain',
@@ -41,31 +43,77 @@ const Question = () => {
       ],
     },
   ];
+
+  const [selectedTitle, setSelectedTitle] = useState(1);
+
+  const handleTitleClick = (id) => {
+    setSelectedTitle(id);
+  };
+
   return (
     <div className="flex justify-center bg-[black]">
       <div className="container flex justify-center py-[64px]">
-        <div className="w-[92%] px-8 gap-8 flex justify-between">
+        <div className="w-[100%] px-8 flex justify-between gap-[120px]">
           <div className="flex flex-col gap-[10px]">
             <h1 className="medium-h1 !text-[#FFF]">Các câu hỏi thường gặp</h1>
             <div className="flex flex-col gap-8">
               <p className="regular !text-[#FFF]">
                 Ở đây bạn sẽ tìm thấy một số câu hỏi thường gặp. Nếu bạn vẫn cần
-                trợ giúp, vui lòng liên hệ với chúng tôi. Chúng tôi luôn hỗ trợ
-                bạn.
+                trợ giúp, vui lòng liên hệ với chúng tôi. <br /> Chúng tôi luôn
+                sẵn lòng hỗ trợ bạn.
               </p>
-              <button className="px-5 label-mid !text-[black] bg-[#FADB14] rounded w-[124px] h-[40px]">
+              <button className="px-5 label-mid !text-[black] bg-[#FADB14] rounded w-[124px] h-[40px] hover:shadow-orange-500 hover:shadow-[0_0_8px_2px]">
                 Nhận hỗ trợ
               </button>
             </div>
           </div>
-          <div className="flex flex-col">
-            <p className="label-mid">Lọc theo chủ đề</p>
+          <div className="flex flex-col w-full">
+            <p className="label-mid leading-8">Lọc theo chủ đề</p>
             <div className="flex items-center gap-3">
-              {listQuestion?.map((item) => (
-                <div className="">
-                  <button className="label-mid px-5 border rounded h-[40px]">
-                    {item.title}
-                  </button>
+              <div className="flex flex-col">
+                <button
+                  className={`label-mid px-5 border rounded h-[40px] py-2 ${
+                    selectedTitle === 1
+                      ? 'bg-[#FADB14] !text-black'
+                      : 'text-white'
+                  }`}
+                  onClick={() => handleTitleClick(1)}
+                >
+                  Về khóa học
+                </button>
+              </div>
+              <div className="flex flex-col">
+                <button
+                  className={`label-mid px-5 border rounded h-[40px] py-2 ${
+                    selectedTitle === 2
+                      ? 'bg-[#FADB14] !text-black'
+                      : 'text-white'
+                  }`}
+                  onClick={() => handleTitleClick(2)}
+                >
+                  Về crcrypto
+                </button>
+              </div>
+            </div>
+            <div className="flex flex-col">
+              {listQuestion.map((item) => (
+                <div
+                  key={item.id}
+                  className={`${
+                    selectedTitle === item.id ? 'block' : 'hidden'
+                  }`}
+                >
+                  {item.list.map((question) => (
+                    <div key={question.content} className="flex flex-col">
+                      <span className="px-4 py-3 flex items-center gap-3">
+                        <img src="./icons/down.svg" alt="" />
+                        <p className="label-larg">{question.content}</p>
+                      </span>
+                      <p className="regular !text-[#FFF] ml-10 mt-1 mb-4 mr-4 leading-5">
+                        {question.text}
+                      </p>
+                    </div>
+                  ))}
                 </div>
               ))}
             </div>

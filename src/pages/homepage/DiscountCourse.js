@@ -34,7 +34,7 @@ const DiscountCourse = () => {
   return (
     <div className="flex justify-center">
       <div className="container flex justify-center py-[64px]">
-        <div className="w-[92%] flex justify-between gap-8 px-8">
+        <div className="w-[100%] flex justify-between gap-8 px-8">
           <div className="flex flex-col gap-5 justify-start">
             <div className="flex items-center gap-2">
               <img src="./icons/group.svg" alt="" />

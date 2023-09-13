@@ -34,7 +34,10 @@ const Nav = () => {
           {listNav?.map((item) => {
             return (
               <li key={item.id} className="p-4 items-center">
-                <a className="label-mid" href="#123">
+                <a
+                  className="label-mid hover:text-[#FA8C16] duration-500"
+                  href="#123"
+                >
                   {item.text}
                 </a>
               </li>

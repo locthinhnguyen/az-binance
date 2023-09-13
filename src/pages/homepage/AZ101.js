@@ -10,12 +10,12 @@ const AZ101 = () => {
   return (
     <div className="flex justify-center">
       <div className="container flex justify-center pt-[120px] pb-[64px]">
-        <div className="w-[92%] flex items-center gap-5 justify-center">
+        <div className="w-[100%] flex items-center gap-5 justify-center">
           <div className="flex flex-col gap-3">
             <p className="text-[48px] text-[black] font-medium leading-[52px]">
               Bắt đầu tìm hiểu crypto <br /> với <br /> AZ101
             </p>
-            <button className="flex items-center gap-1 px-5 bg-[#FADB14] rounded w-[39%] h-[40px]">
+            <button className="flex items-center gap-1 px-5 bg-[#FADB14] rounded w-[39%] h-[40px] hover:shadow-orange-500  hover:shadow-[0_0_8px_2px]">
               <p className="label-mid !text-[black]">Xem các khóa học</p>
               <img src="./icons/wrapper2.svg" alt="." />
             </button>

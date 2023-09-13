@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Homepage = () => {
   return (
@@ -7,10 +7,10 @@ const Homepage = () => {
         <img
           src="./container.gif"
           alt="container"
-          className="w-[92%] rounded-[20px]"
+          className="w-[100%] rounded-[20px]"
         />
         <div className="absolute flex items-center flex-col">
-          <div className="flex flex-col gap-5 p-5 items-center w-[736px] pt-[150px]">
+          <div className="flex flex-col gap-5 p-5 items-center w-[736px] pt-[150px] lg:pt-[300px]">
             <h1 className="text-[64px] font-medium text-[#FFF] text-center">
               Chào mừng bạn đến với AZ finance
             </h1>
@@ -25,7 +25,7 @@ const Homepage = () => {
           </div>
           <div className="pt-[145px] w-[100%] px-8 flex justify-center">
             <form className=" w-[1180px] h-[129px] bg-[black] flex flex-col items-center rounded-[10px] mt-[100px]">
-              <h4 className="medium px-5 py-3 w-full text-center">
+              <h4 className="medium-h4 px-5 py-3 w-full text-center">
                 Nhận tư vấn miễn phí ngay
               </h4>
               <div className="px-5 py-3 flex flex-row gap-4 justify-center w-full">
@@ -51,7 +51,7 @@ const Homepage = () => {
                     className="px-2 py-[3px] max-md:text-[12px] w-full"
                   />
                 </div>
-                <button className="bg-[#FADB14] flex items-center gap-1 px-5 rounded justify-center">
+                <button className="bg-[#FADB14] flex items-center gap-1 px-5 rounded justify-center  hover:shadow-orange-500  hover:shadow-[0_0_8px_2px]">
                   <img src="./icons/send-icon.svg" alt="" />
                   <p className="label-mid !text-[black]">Gửi</p>
                 </button>

@@ -4,17 +4,17 @@ import Copyright from './components/Copyright';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Nav from './components/Nav';
-import AZ101 from './pages/AZ101';
-import Course from './pages/Course';
-import DiscountCourse from './pages/DiscountCourse';
-import Feedback from './pages/Feedback';
-import ForAZFinance from './pages/ForAZFinance';
-import FounderTalks from './pages/FounderTalks';
-import Homepage from './pages/Homepage';
-import Participants from './pages/Participants';
-import Question from './pages/Question';
-import Register from './pages/Register';
-import Videos from './pages/Videos';
+import AZ101 from './pages/homepage/AZ101';
+import Course from './pages/homepage/Course';
+import DiscountCourse from './pages/homepage/DiscountCourse';
+import Feedback from './pages/homepage/Feedback';
+import ForAZFinance from './pages/homepage/ForAZFinance';
+import FounderTalks from './pages/homepage/FounderTalks';
+import Homepage from './pages/homepage/Homepage';
+import Participants from './pages/homepage/Participants';
+import Question from './pages/homepage/Question';
+import Register from './pages/homepage/Register';
+import Videos from './pages/homepage/Videos';
 
 function App() {
   return (

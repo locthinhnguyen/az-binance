@@ -40,9 +40,9 @@ const Participants = () => {
     },
   ];
   return (
-    <div className="flex justify-center bg-[black]">
-      <div className="container flex justify-center relative">
-        <div className="w-[92%] pt-8 flex justify-center px-8 gap-8 flex-col">
+    <div className="flex justify-center bg-gradient-to-b from-black from-80% via-black to-white to-20%">
+      <div className="container flex justify-center">
+        <div className="w-[100%] pt-8 flex justify-center px-8 gap-8 flex-col ">
           <div className="flex flex-col gap-2 items-center">
             <div className="flex items-center gap-2 justify-center">
               <img src="./icons/group.svg" alt="." />
@@ -57,13 +57,33 @@ const Participants = () => {
                   className="flex justify-between relative items-end"
                   key={item.id}
                 >
-                  <img src={item.img} alt="." className=" " />
-                  <div className="absolute overlay">
-                    <div className="flex justify-between p-5 items-end gap-8">
-                      <h3 className="medium-h3 !leading-8 w-full">
-                        {item.title}
-                      </h3>
-                      <p className="regular !text-[white]">{item.text}</p>
+                  <img src={item.img} alt="." className=" w-full" />
+                  <div className="absolute overlay w-full">
+                    <div className="flex justify-between relative items-end">
+                      <div className="flex justify-between p-5 items-end gap-14">
+                        <h3 className="medium-h3 !leading-8 w-full">
+                          {item.title}
+                        </h3>
+                        {/* <div className="w-full"> */}
+                        <p className="regular !text-[white]">{item.text}</p>
+
+                        {/* <div className="items-center justify-end hidden !hover:block">
+                            <img
+                              src="./icons/group.svg"
+                              alt="."
+                              className="w-[24px] h-[24px]"
+                            />
+                            <p className="ml-3 label-mid !text-[#FAAD14]">
+                              Nhận tư vấn ngay
+                            </p>
+                            <img
+                              src="./icons/nextye.svg"
+                              className="ml-1"
+                              alt=""
+                            />                           
+                          </div> */}
+                        {/* </div> */}
+                      </div>
                     </div>
                   </div>
                 </div>
