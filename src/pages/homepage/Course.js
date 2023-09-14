@@ -1,32 +1,7 @@
 import React from 'react';
-
+import { listCourse } from '../../contents/home';
+import { Link } from 'react-router-dom';
 const Course = () => {
-  const listCourse = [
-    {
-      id: 1,
-      img: './images/image1.png',
-      nameCourse: 'Khóa học Crypto & Blockchain Fundamental',
-      title: 'HỌC 8 BUỔI HỌC 2 THÁNG SUPORT 2 NĂM ',
-      content:
-        'Học về kiến thức nền tảng về crypto chuẩn nhất, bao gồm các thuật ngữ và các hoạt chính trên thị trường crypto nói riêng và Blockchain nói chung',
-    },
-    {
-      id: 2,
-      img: './images/image2.png',
-      nameCourse: 'Khóa học phân tích kỹ thuật và giao dịch chuyên sâu',
-      title: 'HỌC 8 BUỔI HỌC 2 THÁNG SUPORT 2 NĂM ',
-      content:
-        'Cách sử dụng Hệ thống quản lý rủi ro nâng cao Giảm thiểu rủi ro và bảo vệ lợi nhuận của bạn một cách hiệu quả.',
-    },
-    {
-      id: 3,
-      img: './images/image3.png',
-      nameCourse: 'Khóa học research dữ liệu onchain trên Blockchain',
-      title: 'HỌC 8 BUỔI HỌC 2 THÁNG SUPORT 2 NĂM ',
-      content:
-        'Hoc cách dự đoán biến động, nhịp độ thị trường thông qua phân tích dữ liệu , dòng tiền trên Blockchain (On-chain).',
-    },
-  ];
   return (
     <div className="flex justify-center">
       <div className="container flex justify-center">
@@ -41,8 +16,8 @@ const Course = () => {
           <div className="flex flex-row gap-8">
             {listCourse?.map((item) => {
               return (
-                <div className="w-[470px]">
-                  <img src={item.img} alt="." />
+                <div className="w-full">
+                  <img src={item.img} alt="." className="w-full" />
                   <div className="py-3">
                     <h3 className="medium-h3 !text-[black]">
                       {item.nameCourse}
@@ -52,10 +27,10 @@ const Course = () => {
                     </p>
                     <p className="regular-h5">{item.content}</p>
                   </div>
-                  <button className="py-3 flex items-center gap-1">
+                  <Link className="py-3 flex items-center gap-1" to={'course'}>
                     <p className="label-mid !text-[black]">Xem khóa học</p>
                     <img src="./icons/wrapper2.svg" alt="." />
-                  </button>
+                  </Link>
                 </div>
               );
             })}

@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Header = () => {
+const Header = ({ className }) => {
+  console.log('className: ', className);
   const listMenu = [
     {
       id: 1,
@@ -24,7 +25,7 @@ const Header = () => {
     },
   ];
   return (
-    <header className="flex justify-center ">
+    <header className="flex justify-center">
       <div className="container flex items-center justify-between gap-4 px-[30px] ">
         <div className="flex items-center gap-2 p-[10px]">
           <img src="./icon-header.svg" alt="icon" />

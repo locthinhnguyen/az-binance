@@ -22,7 +22,7 @@ const Bar = () => {
   return (
     <div className="flex justify-center">
       <div className=" container flex justify-center py-8 px-8">
-        <div className="w-[100%] flex justify-center bg-[black] rounded-[10px] gap-[100px]">
+        <div className="w-[80%] flex justify-center bg-[black] rounded-[10px] gap-[100px]">
           {listStatus?.map((item) => {
             return (
               <div

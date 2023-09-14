@@ -1,6 +1,8 @@
 import React from 'react';
 
-const Nav = () => {
+const Nav = ({ className }) => {
+  console.log('className: ', className);
+
   const listNav = [
     {
       id: 1,
@@ -28,7 +30,7 @@ const Nav = () => {
     },
   ];
   return (
-    <div className="flex justify-center bg-[#1D1D1D]">
+    <div className="flex justify-center bg-[#1D1D1D] sticky top-0 z-10 ">
       <div className="menu flex items-center">
         <ul className="flex gap-[10px]">
           {listNav?.map((item) => {

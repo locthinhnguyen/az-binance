@@ -131,7 +131,7 @@ const Footer = () => {
                 AZ Finance
               </p>
             </div>
-            <div className="max-md:flex max-md:gap-2 max-md:flex-col">
+            <div className="">
               <div className="flex items-center gap-2">
                 <img src="./icons/mail-icon.png" alt="mail" />
                 <p className="description !text-[#8C8C8C]">
@@ -149,14 +149,14 @@ const Footer = () => {
                 <p className="description !text-[#8C8C8C]">0899.068.898</p>
               </div>
             </div>
-            <div className=" flex flex-row gap-4 max-md:hidden">
+            <div className=" flex flex-row gap-4 ">
               <img src="./icons/face.svg" alt="." />
               <img src="./icons/ins.svg" alt="." />
               <img src="./icons/twi.svg" alt="." />
               <img src="./icons/whats.svg" alt="." />
             </div>
           </div>
-          <div className="flex gap-[52px] max-md:hidden">
+          <div className="flex gap-[52px] ">
             {footerList?.map((item) => {
               return (
                 <div key={item.title} className="flex flex-col gap-2">

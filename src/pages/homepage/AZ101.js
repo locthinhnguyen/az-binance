@@ -9,8 +9,8 @@ const AZ101 = () => {
   ];
   return (
     <div className="flex justify-center">
-      <div className="container flex justify-center pt-[120px] pb-[64px]">
-        <div className="w-[100%] flex items-center gap-5 justify-center">
+      <div className="container flex justify-center pt-[120px] pb-[64px] ">
+        <div className="w-[100%] flex items-center gap-5 justify-center ">
           <div className="flex flex-col gap-3">
             <p className="text-[48px] text-[black] font-medium leading-[52px]">
               Bắt đầu tìm hiểu crypto <br /> với <br /> AZ101

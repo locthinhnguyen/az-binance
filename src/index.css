@@ -101,4 +101,15 @@
 }
 
 
+.titlecourse1 {
+  color:var(--neutral-10, #1D1D1D);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.titlecourse2 {
+  color:var(--neutral-7, #8C8C8C);
+  font-size: 14px;
+  font-weight: 500;
+}
 
